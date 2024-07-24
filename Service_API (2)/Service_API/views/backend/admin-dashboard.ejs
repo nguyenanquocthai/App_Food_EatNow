@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('admin/body/head.ejs')-%>
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <%-include('admin/body/header.ejs')-%>
+      <%-include('admin/body/sidebar.ejs')-%>
+
+      <!-- Main Content -->
+    <div class="main-content">  
+     @yield('content')
+    </div>
+
+    <%-include('admin/body/footer.ejs')-%>
+  </div>
+  
+  <%-include('admin/body/foot.ejs')-%>
+</body>
+</html>

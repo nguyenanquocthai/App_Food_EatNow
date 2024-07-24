@@ -1,0 +1,64 @@
+
+      
+         <%-include('common/head.ejs')-%>
+      <title>Admin EatNowApp</title>
+   </head>
+   <body>
+      <%-include('common/head.ejs')-%>
+      <div class="container-fluid bg-side-nav">
+         <div class="row">
+            <div class="col-lg-2 sidebaare">
+               <%-include('common/sidebar.ejs')-%>
+            </div>
+            <div class="col-lg-10">
+
+              <div class="dashboard-content-area">
+                <!-- put your contente -->
+
+                <h1>All Pages</h1>
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                   <thead>
+                      <tr>
+                         <th>Name</th>
+                         <th>Designation</th>
+                         <th>Salary</th>
+                         <th>Operations</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                         <td>raj k</td>
+                         <td>devs</td>
+                         <td>800</td>
+                         <td>
+                            <a class="btn btn-primary" href="/edit/raj k">Edit</a>                     
+                            <form style="display: inline;" action="/delete/raj k?_method=DELETE" method="POST">
+                               <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                            </form>
+                         </td>
+                      </tr>
+                      <tr>
+                         <td>hhh</td>
+                         <td></td>
+                         <td></td>
+                         <td>
+                            <a class="btn btn-primary" href="/admin/page/editpage/">Edit</a>                     
+                            <form style="display: inline;" action="/delete/hhh?_method=DELETE" method="POST">
+                               <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                            </form>
+                         </td>
+                      </tr>
+                   </tbody>
+                </table>
+                  
+ 
+                  <center> <br> <a class="btn btn-success btn-md" href="/admin/page/addpage/">Add More Pages</a> </center>
+        
+ 
+               <!-- end your content here -->
+             </div>
+
+            </div>
+         </div>
+      </div>
+      <%-include('common/footer.ejs')-%>
